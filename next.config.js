@@ -28,6 +28,10 @@ let config = {
   publicRuntimeConfig: {
     serverAndClient: "public",
     host: "127.0.0.1:3333",
+    // 可以用于 子域名 切换语言
+    localeSubpaths: typeof process.env.LOCALE_SUBPATHS === 'string'
+    ? process.env.LOCALE_SUBPATHS
+    : 'none',
   },
 
   webpack: config => {
