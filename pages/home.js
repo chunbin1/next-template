@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./home.module.less";
 import { i18n, Link, withTranslation } from "../i18n";
 
-function Home({ t }) {
+const Home = ({ t }) => {
   return (
     <>
       <div className={styles.home}>{t("title")}</div>
@@ -17,6 +17,6 @@ function Home({ t }) {
       </button>
     </>
   );
-}
+};
 
 export default withTranslation("common")(Home);
