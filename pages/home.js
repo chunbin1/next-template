@@ -1,16 +1,10 @@
-import React, { Component } from 'react'
-import styles from  './home.module.less'
+import React from "react";
+import styles from "./home.module.less";
 
-class Home extends Component {
-  render() {
-    return (
-      <div className={styles.home}>
-        这是一个主页
-      </div>
-    )
-  }
+function Home() {
+  // const ad = 12;
+
+  return <div className={styles.home}>这是一个主页</div>;
 }
 
-
-
-export default Home
+export default Home;
