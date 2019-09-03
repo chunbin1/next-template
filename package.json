@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev2": "node index.js",
+    "dev": "node index.js",
     "build": "BUNDLE_ANALYZE=both next build",
     "start": "next start"
   },
