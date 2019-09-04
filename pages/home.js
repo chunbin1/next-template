@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./home.module.less";
-import { i18n, Link, withTranslation } from "../i18n";
+import styles from "../less/home.module.less";
+import { i18n, withTranslation } from "../i18n";
 
 const Home = ({ t }) => {
   return (
