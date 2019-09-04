@@ -1,4 +1,4 @@
-## 这是一个nextjs的项目模版
+## 这是一个nextjs服务端渲染的项目模版
 
 #### quick start
 
@@ -18,7 +18,12 @@ build and deploy
   4. eslint
 
 后续：
-  redux支持
+  1. redux支持
+
+#### 目录说明
+/const 存放公共变量
+/static 存放静态资源 /static/locales国际化
+/next-plugins 存放next打包的插件,内置less moudule打包插件
 
 #### 参考资料：
 - [next.js](https://nextjs.org)
