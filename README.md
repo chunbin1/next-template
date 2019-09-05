@@ -6,7 +6,7 @@
   yarn
   yarn run dev
 ```
-build and deploy
+build
 ```
   yarn run build
 ```
@@ -19,11 +19,17 @@ build and deploy
 
 后续：
   1. redux支持
+  2. 打包分割公共部分
+  3. 支持antd
+  4. style分割
 
 #### 目录说明
-/const 存放公共变量
-/static 存放静态资源 /static/locales国际化
-/next-plugins 存放next打包的插件,内置less moudule打包插件
+/const 存放公共变量 <br>
+/static 存放静态资源 /static/locales国际化 <br>
+/next-plugins 存放next打包的插件,内置less moudule打包插件 <br>
+
+#### 注意事项
+- 生产环境中 styles.css 是没有添加hash的，因为浏览器缓存原因，可能导致第一次渲染后，跳转其他页面没有样式,刷新即可，正式环境中**styles.[hash].css** 会解决这个问题
 
 #### 参考资料：
 - [next.js](https://nextjs.org)

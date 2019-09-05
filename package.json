@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node index.js",
-    "build": "BUNDLE_ANALYZE=both next build",
+    "build": "NODE_ENV=production BUNDLE_ANALYZE=both next build",
     "start": "next start"
   },
   "dependencies": {
