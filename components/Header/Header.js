@@ -21,10 +21,6 @@ class Header extends Component {
               </li>
             </ul>
             <ul className="secondList">
-              {/* 技术体验中心 */}
-              <a href="https://www.tuputech.com/reactProduct/moderation/trailText">
-                技术体验中心
-              </a>
               <div>
                 <li>
                   <Link href="/sound_static">语音识别</Link>
