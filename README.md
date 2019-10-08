@@ -29,6 +29,11 @@ build
 /next-plugins 存放next打包的插件,内置less moudule打包插件 <br>
 
 #### 常见问题
+##### 使用@解决层级过深的问题
+@: 表示根目录
+```
+import Rc from '@/components/Rc'
+```
 ##### 国际化返回Object
 [参考文档](https://www.i18next.com/translation-function/objects-and-arrays)
 ```
