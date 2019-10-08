@@ -28,6 +28,14 @@ build
 /static 存放静态资源 /static/locales国际化 <br>
 /next-plugins 存放next打包的插件,内置less moudule打包插件 <br>
 
+#### 常见问题
+##### 国际化返回Object
+[参考文档](https://www.i18next.com/translation-function/objects-and-arrays)
+```
+i18next.t('array', { returnObjects: true });
+// -> ['a', 'b', 'c']
+```
+
 #### 注意事项
 - 生产环境中 styles.css 是没有添加hash的，因为浏览器缓存原因，可能导致第一次渲染后，跳转其他页面没有样式,刷新即可，正式环境中**styles.[hash].css** 会解决这个问题
 
