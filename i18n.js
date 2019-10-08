@@ -10,12 +10,12 @@ const localeSubpathVariations = {
   all: {
     // 可以通过子路径采用不同的语言
     en: 'en',
-    zh_CN: 'zh_CN',
+    zh_CN: 'zh-CN',
   },
 }
 
 module.exports = new NextI18Next({
-  defaultLanguage:'zh_CN', // 默认中文
+  defaultLanguage:'zh-CN', // 默认中文
   otherLanguages: ['en'],
   localeSubpaths: localeSubpathVariations[localeSubpaths],
 })
