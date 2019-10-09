@@ -2,6 +2,7 @@
 
 #### quick start
 
+dev
 ```
   yarn
   yarn run dev
@@ -9,6 +10,10 @@
 build
 ```
   yarn run build
+```
+deploy
+```
+  yarn run deploy
 ```
 
 支持以下特性 feature:
