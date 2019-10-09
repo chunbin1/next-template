@@ -25,7 +25,8 @@ build
 
 #### 目录说明
 /const 存放公共变量 <br>
-/static 存放静态资源 /static/locales国际化 <br>
+/static 存放静态资源<br> 
+/static/locales国际化 <br>
 /next-plugins 存放next打包的插件,内置less moudule打包插件 <br>
 
 #### 常见问题

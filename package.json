@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "node index.js",
-    "build": "NODE_ENV=production BUNDLE_ANALYZE=both next build",
-    "start": "next start"
+    "build": "NODE_ENV=production next build",
+    "build:analyze": "NODE_ENV=production BUNDLE_ANALYZE=both next build",
+    "start": "NODE_ENV=production node index.js",
+    "deploy": "yarn run build && yarn run start"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",

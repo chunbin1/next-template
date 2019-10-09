@@ -1,3 +1,6 @@
+/**
+ * for css module
+ */
 /* eslint-disable compat/compat */
 /* eslint-disable no-param-reassign */
 /* eslint-disable prefer-object-spread */
