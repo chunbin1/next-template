@@ -1,10 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 
-const withLess = require('./next-plugins/next-less');
 const withCss = require('@zeit/next-css');
 const withImages = require('next-images');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const webpack = require('webpack');
+const withLess = require('./next-plugins/next-less');
 
 let config = {
   // 编译过后的文件夹名称

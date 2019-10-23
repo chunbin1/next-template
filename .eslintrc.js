@@ -34,6 +34,7 @@ module.exports = {
     "linebreak-style": 0,
     "react/destructuring-assignment": false,
     "react/jsx-props-no-spreading":false,
+    "react/state-in-constructor":false,
   },
   settings: {
     polyfills: ["fetch", "promises", "url", "object-assign"]
