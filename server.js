@@ -14,6 +14,14 @@ const handle = app.getRequestHandler();
 
   server.use(nextI18NextMiddleware(nextI18next))
 
+  server.get(/\.css$/,(req,res,nextHandler)=>{
+    res.setHeader(
+      "Cache-Control",
+      "public, max-age=31536000, immutable",
+    );
+    nextHandler()
+  })
+
   server.get('*', (req, res) => handle(req, res))
 
   await server.listen(port)

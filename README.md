@@ -128,6 +128,18 @@ i18next.t('array', { returnObjects: true });
 // -> ['a', 'b', 'c']
 ```
 
+#### css强缓存
+nextjs返回的css文件默认是协商缓存,修改为强缓存
+```
+  server.get(/\.css$/,(req,res,nextHandler)=>{
+    res.setHeader(
+      "Cache-Control",
+      "public, max-age=31536000, immutable",
+    );
+    nextHandler()
+  })
+```
+
 ## 注意事项
 
 - 生产环境中 styles.css 是没有添加 hash 的，因为浏览器缓存原因，可能导致第一次渲染后，跳转其他页面没有样式,**刷新即可**，正式环境中**styles.[hash].css** 会解决这个问题
